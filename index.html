@@ -4,57 +4,133 @@
   <meta charset="utf-8">
   <title>Valheim trainer +26 v1.0.0 — MoggyDay</title>
   <meta name="description" content="Free Valheim trainer MoggyDay +26 (v1.0.0): God Mode, Infinite Health, Infinite Stamina, Infinite Eitr, Ghost Mode, Fly Mode, Stealth Mode, Edit Max Carry. EN/RU/CN · …">
-  <meta name="keywords" content="valheim, valheim trainer, valheim трейнер, trainer download, скачать трейнер, god mode, infinite hp, infinite stamina, eitr, infinite food, freeze daytime, no death penalty, moggyday trainer, trainerhub moggyday, free trainer download, 2026, steam 892970, valheim cheats, здоровье, стамина">
+  <meta name="keywords" content="valheim, valheim trainer, valheim трейнер, trainer download, скачать трейнер, god mode, infinite hp, infinite stamina, eitr, infinite food, freeze daytime, no death penalty, moggyday trainer, trainerhub moggyday, free trainer download, 2026">
   <link rel="canonical" href="https://moggydaytrainer.com/en/f/valheim-trainer">
-  <meta property="og:title" content="Valheim V1.0 "Trainer +26: Health, Stamina, Food, Daytime" [v1.2.0]">
+  <meta property="og:title" content="Valheim V1.0 &quot;Trainer +26: Health, Stamina, Food, Daytime&quot; [v1.2.0]">
   <meta property="og:description" content="Free Valheim trainer MoggyDay +26 (v1.0.0): God Mode, Infinite Health, Infinite Stamina, Infinite Eitr, Ghost Mode, Fly Mode, Stealth Mode, Edit Max Carry. EN/RU/CN · …">
   <meta property="og:url" content="https://moggydaytrainer.com/en/f/valheim-trainer">
+  <meta property='og:image' content='https://moggydaytrainer.com/media/shots/hub-valheim/page.png'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Serif:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: dark; }
-    body { font: 17px/1.55 "Segoe UI", system-ui, sans-serif; max-width: 860px; margin: 40px auto;
-      padding: 0 20px 64px; background: #0b1220; color: #d7e3f0; }
-    a { color: #7fdcf4; }
-    h1 { font-size: 28px; line-height: 1.25; color: #fff; }
-    .btn { display: inline-block; margin: 6px 8px 6px 0; padding: 12px 16px; border-radius: 10px;
-      background: #15ccf1; color: #041018; font-weight: 700; text-decoration: none; }
-    .btn.alt { background: transparent; color: #7fdcf4; border: 1px solid #2a4a5c; }
-    .muted { color: #8aa0b5; font-size: 14px; }
-    table { border-collapse: collapse; width: 100%; }
-    td, th { border-bottom: 1px solid #1c2c3c; padding: 8px 6px; text-align: left; }
+    :root {
+      --ink: #10160f;
+      --panel: #172016;
+      --paper: #d7e2cf;
+      --lime: #c6e15a;
+      --mute: #8aa08a;
+      --line: #2a3828;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--ink); color: var(--paper);
+      font: 17px/1.55 "IBM Plex Sans", system-ui, sans-serif;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 22px 72px; }
+    header.hero {
+      display: grid; grid-template-columns: 168px 1fr; gap: 22px;
+      align-items: start; margin-bottom: 22px;
+    }
+    .poster img {
+      width: 168px; height: auto; display: block;
+      border: 1px solid var(--line); background: #0a0e09;
+    }
+    h1 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: clamp(26px, 4vw, 36px); line-height: 1.15;
+      margin: 0 0 10px; font-weight: 700;
+    }
+    .meta { color: var(--mute); font-size: 14px; margin: 0 0 14px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cta a {
+      display: inline-block; padding: 10px 14px; text-decoration: none;
+      font-weight: 700; color: var(--ink); background: var(--lime);
+    }
+    .cta a.ghost { background: transparent; color: var(--paper); border: 1px solid var(--line); }
+    .strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+      margin: 8px 0 28px;
+    }
+    .strip a { color: var(--mute); font-size: 12px; text-decoration: none; }
+    .strip img { width: 100%; height: 110px; object-fit: cover; display: block; border: 1px solid var(--line); }
+    .strip span { display: block; margin-top: 4px; }
+    h2 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 22px; margin: 32px 0 10px; font-weight: 700;
+    }
+    p, li { max-width: 68ch; }
+    a { color: var(--lime); }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+    th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); }
+    .note { border-left: 3px solid var(--lime); padding-left: 12px; color: var(--mute); }
+    .rels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .rel { text-decoration: none; color: var(--paper); }
+    .rel img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--line); }
+    .rel b { display: block; margin-top: 6px; font-size: 13px; font-weight: 600; }
+    footer { margin-top: 40px; color: var(--mute); font-size: 13px; }
+    @media (max-width: 720px) {
+      header.hero, .strip, .rels { grid-template-columns: 1fr 1fr; }
+      .poster img { width: 100%; }
+    }
   </style>
 </head>
 <body>
-  <p class="muted">Valheim · MoggyDay TrainerHub · 2026 · +26 options</p>
-  <h1>Valheim V1.0 "Trainer +26: Health, Stamina, Food, Daytime" [v1.2.0]</h1>
-  <p>
-    <a class="btn" href="https://moggydaytrainer.com/en/f/valheim-trainer">Free download (EN)</a>
-    <a class="btn alt" href="https://moggydaytrainer.com/f/valheim-trainer">Скачать трейнер (RU)</a>
-    <a class="btn alt" href="https://moggydaytrainer.com/g/valheim">Valheim hub</a>
-  </p>
-  <p>Free Valheim trainer MoggyDay +26 (v1.0.0): God Mode, Infinite Health, Infinite Stamina, Infinite Eitr, Ghost Mode, Fly Mode, Stealth Mode, Edit Max Carry. EN/RU/CN · …</p>
+<main>
+  <header class="hero">
+    <a class="poster" href="https://moggydaytrainer.com/en/f/valheim-trainer"><img src="https://moggydaytrainer.com/media/covers/valheim-10c7a01e62.jpg" alt="Valheim cover"></a>
+    <div>
+      <p class="meta">Valheim · MoggyDay · v1.2.0 · +26</p>
+      <h1>Valheim V1.0 &quot;Trainer +26: Health, Stamina, Food, Daytime&quot; [v1.2.0]</h1>
+      <div class="cta">
+        <a href="https://moggydaytrainer.com/en/f/valheim-trainer">Free download</a>
+        <a class="ghost" href="https://moggydaytrainer.com/f/valheim-trainer">Скачать</a>
+        <a class="ghost" href="https://moggydaytrainer.com/g/valheim">Valheim hub</a>
+      </div>
+    </div>
+  </header>
+  <div class="strip"><a href="https://moggydaytrainer.com/en/f/valheim-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-valheim/page.png" alt="Valheim page"><span>page</span></a><a href="https://moggydaytrainer.com/en/f/valheim-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-valheim/fn-1.png" alt="Valheim options"><span>options</span></a><a href="https://moggydaytrainer.com/en/f/valheim-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-valheim/fn-2.png" alt="Valheim functions"><span>functions</span></a><a href="https://moggydaytrainer.com/en/f/valheim-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-valheim/fn-3.png" alt="Valheim more"><span>more</span></a></div>
+  <p>If you want a **Valheim trainer** with god mode, health and the rest of the +26 list, use the canonical page [Valheim V1.0 &quot;Trainer +26: Health, Stamina, Food, Daytime&quot; [v1.2.0]](https://moggydaytrainer.com/en/f/valheim-trainer). GitHub is notes + pictures. The v1.2.0 heading, comments and file live on moggydaytrainer.com. Hub and patch notes: Valheim hub, news.</p>
   
-  <h2>Why this page exists</h2>
-  <p>
-    GitHub indexes READMEs and Pages. This landing is a <strong>documentation mirror</strong> of the
-    live Valheim trainer so queries such as <em>Valheim trainer</em>, <em>Valheim trainer download</em> and
-    <em>free Valheim trainer</em> can attach to a real URL. The canonical page — the one with the file,
-    version and comments — is
-    <a href="https://moggydaytrainer.com/en/f/valheim-trainer">https://moggydaytrainer.com/en/f/valheim-trainer</a>.
-  </p>
-  <h2>Options listed on MoggyDay</h2>
-  <ul>
-      <li>Infinite Health</li>
-      <li>Infinite Stamina</li>
-      <li>Infinite Eitr</li>
-      <li>Ghost Mode</li>
-      <li>Fly Mode</li>
-      <li>Stealth Mode</li>
-      <li>Edit Max Carry. EN/RU/CN</li>
-  </ul>
-  <h2>Official MoggyDay links</h2>
+  <p>Free Valheim trainer MoggyDay +26 (v1.0.0): God Mode, Infinite Health, Infinite Stamina, Infinite Eitr, Ghost Mode, Fly Mode, Stealth Mode, Edit Max Carry. EN/RU/CN · …</p>
+  <h2>Who this is for</h2>
+  <p>Aimed at offline / single-player Valheim. If a toggle stops working after a patch, check the same MoggyDay URL — the version string in the H1 is the source of truth, not this README date.</p>
+  <h2>Options on the live page</h2>
   <table>
-    <tr><th>EN trainer</th><td><a href="https://moggydaytrainer.com/en/f/valheim-trainer">https://moggydaytrainer.com/en/f/valheim-trainer</a></td></tr>
-    <tr><th>RU trainer</th><td><a href="https://moggydaytrainer.com/f/valheim-trainer">https://moggydaytrainer.com/f/valheim-trainer</a></td></tr>
+    <thead><tr><th>#</th><th>Toggle</th></tr></thead>
+    <tbody>
+        <tr><td>1</td><td>Infinite Health</td></tr>
+        <tr><td>2</td><td>Infinite Stamina</td></tr>
+        <tr><td>3</td><td>Infinite Eitr</td></tr>
+        <tr><td>4</td><td>Ghost Mode</td></tr>
+        <tr><td>5</td><td>Fly Mode</td></tr>
+        <tr><td>6</td><td>Stealth Mode</td></tr>
+        <tr><td>7</td><td>Edit Max Carry. EN/RU/CN</td></tr>
+    </tbody>
+  </table>
+  <ul>
+      <li>Infinite Health — Usually the first toggle people enable on a Valheim trainer.</li>
+      <li>Infinite Stamina — Check this after every Valheim patch — values often shift.</li>
+      <li>Infinite Eitr — Leave it off if you only want a mild resource boost.</li>
+      <li>Ghost Mode — Pairs with the other combat toggles on the Valheim page.</li>
+      <li>Fly Mode — Use it to skip a grind, then turn it back off.</li>
+      <li>Stealth Mode — Read the live hotkey next to this name on MoggyDay.</li>
+      <li>Edit Max Carry. EN/RU/CN — Game-specific: the Valheim listing explains the exact effect.</li>
+  </ul>
+  <h2>Download</h2>
+  <ol>
+    <li>Open <a href="https://moggydaytrainer.com/en/f/valheim-trainer">Valheim V1.0 &quot;Trainer +26: Health, Stamina, Food, Daytime&quot; [v1.2.0]</a> or <a href="https://moggydaytrainer.com/f/valheim-trainer">Valheim V1.0 «Трейнер +26: здоровье, стамина, еда, день» [v1.2.0]</a>.</li>
+    <li>Stay on moggydaytrainer.com.</li>
+    <li>Use the primary button. Do not install a zip that only copied this page.</li>
+    <li>After a Valheim patch, reload the same URL.</li>
+  </ol>
+  <h2>RU</h2>
+  <p>Бесплатный трейнер Valheim MoggyDay +26 (v1.0.0): Режим бога, Бесконечное здоровье, Бесконечная стамина, Бесконечный Eitr, Режим призрака, Полёт, Стелс, Макс. вес. UI …</p>
+  <p><a href="https://moggydaytrainer.com/f/valheim-trainer">Valheim V1.0 «Трейнер +26: здоровье, стамина, еда, день» [v1.2.0]</a> · <a href="https://moggydaytrainer.com/g/valheim">хаб</a> · <a href="https://moggydaytrainer.com/g/valheim/news">новости</a></p>
+  <h2>Official links</h2>
+  <table>
+    <tr><th>EN</th><td><a href="https://moggydaytrainer.com/en/f/valheim-trainer">https://moggydaytrainer.com/en/f/valheim-trainer</a></td></tr>
+    <tr><th>RU</th><td><a href="https://moggydaytrainer.com/f/valheim-trainer">https://moggydaytrainer.com/f/valheim-trainer</a></td></tr>
     <tr><th>Hub</th><td><a href="https://moggydaytrainer.com/g/valheim">https://moggydaytrainer.com/g/valheim</a></td></tr>
     <tr><th>News</th><td><a href="https://moggydaytrainer.com/g/valheim/news">https://moggydaytrainer.com/g/valheim/news</a></td></tr>
     <tr><th>Catalog</th><td><a href="https://moggydaytrainer.com/games">https://moggydaytrainer.com/games</a></td></tr>
@@ -73,16 +149,10 @@
       <li><a href="https://moggydaytrainer.com/en/f/valheim-trainer">infinite food</a></li>
       <li><a href="https://moggydaytrainer.com/en/f/valheim-trainer">freeze daytime</a></li>
       <li><a href="https://moggydaytrainer.com/en/f/valheim-trainer">no death penalty</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/valheim-trainer">moggyday trainer</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/valheim-trainer">trainerhub moggyday</a></li>
   </ul>
-  <h2>More MoggyDay trainers</h2>
-  <ul>
-      <li><a href="https://moggydaytrainer.com/en/f/elden-ring-trainer-tarnishedforge">Elden Ring "Trainer +49: God Mode, Runes, One Hit, HP/FP/Stamina" [v2.2.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/graveyard-keeper-2-trainer">Graveyard Keeper 2 trainer +39: health, money, crafting, map [v1.0.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/silent-hill-townfall-trainer">SILENT HILL: Townfall trainer +42: immortal, items, enemies, time [v1.0.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/broken-arrow-trainer">Broken Arrow trainer +40: command points, units, recon and ammo [v1.0.0]</a></li>
-  </ul>
-  <p class="muted">Canonical: <a href="https://moggydaytrainer.com/en/f/valheim-trainer">https://moggydaytrainer.com/en/f/valheim-trainer</a>. No executable is hosted on GitHub Pages.</p>
+  <h2>More trainers on MoggyDay</h2>
+  <div class="rels"><a class="rel" href="https://moggydaytrainer.com/en/f/elden-ring-trainer-tarnishedforge"><img src="https://moggydaytrainer.com/media/covers/elden-ring-653fccfd97.jpg" alt=""><b>Elden Ring</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/graveyard-keeper-2-trainer"><img src="https://moggydaytrainer.com/media/covers/graveyard-keeper-2-46c2464718.jpg" alt=""><b>Graveyard Keeper 2</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/silent-hill-townfall-trainer"><img src="https://moggydaytrainer.com/media/covers/silent-hill-townfall-8f4b4ab3b6.jpg" alt=""><b>SILENT HILL: Townfall</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/broken-arrow-trainer"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1604270/6b662a8d43880116f843ff401cf052b5bc2c0973/library_capsule_2x.jpg" alt=""><b>Broken Arrow</b></a></div>
+  <footer>Canonical: <a href="https://moggydaytrainer.com/en/f/valheim-trainer">https://moggydaytrainer.com/en/f/valheim-trainer</a>. Screenshots hosted on MoggyDay. No trainer exe on GitHub Pages.</footer>
+</main>
 </body>
 </html>
